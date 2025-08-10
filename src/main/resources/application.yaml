@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: SPRINGBOOT-APPLICATION
+Server:
+  port: 8080
