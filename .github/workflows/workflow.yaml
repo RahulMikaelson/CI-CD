@@ -24,6 +24,10 @@ jobs:
 
       - name: 🏗️ Compile and Build Application
         run: mvn -B package --file pom.xml
-
       - run: echo "📦 Application compiled and built successfully"
+
+      - name: 🧪 Run Unit-Tests
+        run: mvn test
+      - run: echo "✅ Successfully completed unit tests!"
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
